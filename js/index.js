@@ -74,15 +74,12 @@ mainP[2].textContent = siteContent['main-content']['product-content'];
 mainTextH4[3].textContent = siteContent['main-content']['vision-h4'];
 mainP[4].textContent = siteContent['main-content']['vision-content'];
 
-let contactInfo = document.getElementsByClassName('contact');
-contactInfo[0].textContent = siteContent['content']['content-h4'];
 
-
-/*mainTextH4[5].textContent = siteContent['contact']['content-h4'];
+mainTextH4[4].textContent = siteContent['contact']['contact-h4'];
 mainP[5].textContent = siteContent['contact']['address'];
-mainTextH4[6].textContent = siteContent['content']['phone'];
-mainP[6].textContent = siteContent['content']['email']; */
+mainP[6].textContent = siteContent['contact']['phone'];
+mainP[7].textContent = siteContent['contact']['email']; 
 
-mainP[7].textContent = siteContent['footer']['copyright'];
+mainP[8].textContent = siteContent['footer']['copyright'];
 
 
