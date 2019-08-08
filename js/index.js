@@ -53,8 +53,8 @@ hEdit[5].textContent = siteContent['nav']['nav-item-6'];
 let ctaEdit = document.getElementById("cta-img");
 ctaEdit.setAttribute('src', siteContent['cta']['img-src']);
 
-let ctaH1 = document.getElementById("h1");
-ctaH1.textContent = siteContent['cta']['h1'];
+let ctaH1 = document.getElementsByTagName("h1");
+ctaH1[0].textContent = siteContent['cta']['h1'];
 
 let ctaButton = document.getElementById("button");
 ctaButton.textContent = siteContent['cta']['button'];
