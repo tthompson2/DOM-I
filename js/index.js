@@ -75,11 +75,20 @@ mainTextH4[3].textContent = siteContent['main-content']['vision-h4'];
 mainP[4].textContent = siteContent['main-content']['vision-content'];
 
 
-mainTextH4[4].textContent = siteContent['contact']['contact-h4'];
+mainTextH4[5].textContent = siteContent['contact']['contact-h4'];
 mainP[5].textContent = siteContent['contact']['address'];
 mainP[6].textContent = siteContent['contact']['phone'];
 mainP[7].textContent = siteContent['contact']['email']; 
 
 mainP[8].textContent = siteContent['footer']['copyright'];
 
+
+let ctaImage = document.getElementById("cta-img");
+ctaImage.setAttribute('src', siteContent["cta"]["img-src"]);
+
+let middleImage = document.getElementById("middle-img");
+middleImage.setAttribute('src', siteContent['main-content']['middle-img-src']);
+
+let navText = document.getElementsByTagName("nav");
+navText[0].style.color = "green";
 
