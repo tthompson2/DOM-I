@@ -42,7 +42,7 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 
-let hEdit = document.querySelectorAll('a');
+var hEdit = document.querySelectorAll('a');
 hEdit[0].textContent = siteContent['nav']['nav-item-1'];
 hEdit[1].textContent = siteContent['nav']['nav-item-2'];
 hEdit[2].textContent = siteContent['nav']['nav-item-3'];
@@ -95,11 +95,12 @@ ctaImage.setAttribute('src', siteContent["cta"]["img-src"]);
 let middleImage = document.getElementById("middle-img");
 middleImage.setAttribute('src', siteContent['main-content']['middle-img-src']);
 
-var hPrepend = document.createElement('a');
-var hAppend = document.createElement('a');
+// need to figure out why line 100 is the way that it is.
 
-hPrepend.innerHTML = 'PrependContent';
-hEdit.prepend(hPrepend);
-
-hAppend.innerHTML = 'AppendContent';
-hEdit.appendchild(hAppend);
+var hEdit = document.querySelector('a');
+// get element content as string
+console.log(hEdit.innerHTML)
+// append to the element's content
+hEdit.innerHTML += '<a>RANDOM STUFF</a>';
+// prepend to the element's content
+hEdit.innerHTML = '<a>STUFF HERE</a>' + hEdit.innerHTML;
