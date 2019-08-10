@@ -99,7 +99,6 @@ middleImage.setAttribute('src', siteContent['main-content']['middle-img-src']);
 
 var hEdit = document.querySelector('a');
 // get element content as string
-console.log(hEdit.innerHTML)
 // append to the element's content
 hEdit.innerHTML += '<a>RANDOM STUFF</a>';
 // prepend to the element's content

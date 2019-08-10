@@ -12,3 +12,9 @@ body {
 .redDigit {
   color: red;
 }
+
+.button {
+  width: 50px;
+  border-radius: 1px;
+  color: green;
+}
