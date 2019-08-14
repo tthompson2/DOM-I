@@ -95,11 +95,10 @@ ctaImage.setAttribute('src', siteContent["cta"]["img-src"]);
 let middleImage = document.getElementById("middle-img");
 middleImage.setAttribute('src', siteContent['main-content']['middle-img-src']);
 
-// need to figure out why line 100 is the way that it is.
-
 var hEdit = document.querySelector('a');
-// get element content as string
-// append to the element's content
-hEdit.innerHTML += '<a>RANDOM STUFF</a>';
-// prepend to the element's content
-hEdit.innerHTML = '<a>STUFF HERE</a>' + hEdit.innerHTML;
+
+hEdit.prepend('testprepend ');
+
+var secondHEdit = document.querySelector('a')
+
+secondHEdit.appendChild('test appendChild ');
