@@ -49,12 +49,11 @@ hEdit[2].textContent = siteContent['nav']['nav-item-3'];
 hEdit[3].textContent = siteContent['nav']['nav-item-4'];
 hEdit[4].textContent = siteContent['nav']['nav-item-5'];
 hEdit[5].textContent = siteContent['nav']['nav-item-6'];
-hEdit[0].style.color = "green";
-hEdit[1].style.color = "green";
-hEdit[2].style.color = "green";
-hEdit[3].style.color = "green";
-hEdit[4].style.color = "green";
-hEdit[5].style.color = "green";
+
+for (let i = 0; i < 6; i++)
+{
+  hEdit[i].style.color = "green";
+}
 
 let ctaEdit = document.getElementById("cta-img");
 ctaEdit.setAttribute('src', siteContent['cta']['img-src']);
