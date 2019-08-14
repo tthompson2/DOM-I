@@ -94,10 +94,16 @@ ctaImage.setAttribute('src', siteContent["cta"]["img-src"]);
 let middleImage = document.getElementById("middle-img");
 middleImage.setAttribute('src', siteContent['main-content']['middle-img-src']);
 
-var hEdit = document.querySelector('a');
+var parent = document.querySelector('nav');
 
-hEdit.prepend('testprepend ');
+var aTagPrepend = document.createElement('a');
 
-var secondHEdit = document.querySelector('a')
+aTagPrepend.textContent = 'PrependTest'
 
-secondHEdit.appendChild('test appendChild ');
+parent.prepend(aTagPrepend);
+
+var aTag = document.createElement('a');
+
+aTag.textContent = 'AppendTest'
+
+parent.appendChild(aTag);
