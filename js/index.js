@@ -73,10 +73,13 @@ mainP[0].textContent = siteContent['main-content']['features-content'];
 mainTextH4[1].textContent = siteContent['main-content']['about-h4'];
 mainP[1].textContent = siteContent['main-content']['about-content'];
 
-mainTextH4[2].textContent = siteContent['main-content']['product-h4'];
-mainP[2].textContent = siteContent['main-content']['product-content'];
+mainTextH4[2].textContent = siteContent['main-content']['services-h4'];
+mainP[2].textContent = siteContent['main-content']['services-content'];
 
-mainTextH4[3].textContent = siteContent['main-content']['vision-h4'];
+mainTextH4[3].textContent = siteContent['main-content']['product-h4'];
+mainP[3].textContent = siteContent['main-content']['product-content'];
+
+mainTextH4[4].textContent = siteContent['main-content']['vision-h4'];
 mainP[4].textContent = siteContent['main-content']['vision-content'];
 
 // End of code to put content in body
@@ -118,3 +121,9 @@ parent.appendChild(aTag);
 // Stretech Goals 
 
 document.body.style.backgroundColor = 'purple';
+
+var siteRefactorBtn = document.creatElement("button");
+siteRefactorBtn.innerHTML = "Refactor Button";
+document.body.appendChild(btn);
+
+//siteRefactorBtn.addEventListener
