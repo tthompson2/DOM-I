@@ -41,19 +41,19 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+//Code to build Nav Bar
 
 var hEdit = document.querySelectorAll('a');
-hEdit[0].textContent = siteContent['nav']['nav-item-1'];
-hEdit[1].textContent = siteContent['nav']['nav-item-2'];
-hEdit[2].textContent = siteContent['nav']['nav-item-3'];
-hEdit[3].textContent = siteContent['nav']['nav-item-4'];
-hEdit[4].textContent = siteContent['nav']['nav-item-5'];
-hEdit[5].textContent = siteContent['nav']['nav-item-6'];
 
 for (let i = 0; i < 6; i++)
 {
-  hEdit[i].style.color = "green";
+  hEdit[i].textContent = siteContent['nav']['nav-item-' + (i+1)];
+  hEdit[i].style.color = "yellow";
 }
+
+// End of code to build Nav Bar
+
+// Beginning of code to put content on page
 
 let ctaEdit = document.getElementById("cta-img");
 ctaEdit.setAttribute('src', siteContent['cta']['img-src']);
@@ -79,6 +79,10 @@ mainP[2].textContent = siteContent['main-content']['product-content'];
 mainTextH4[3].textContent = siteContent['main-content']['vision-h4'];
 mainP[4].textContent = siteContent['main-content']['vision-content'];
 
+// End of code to put content in body
+
+// Code to place footer content
+
 
 mainTextH4[5].textContent = siteContent['contact']['contact-h4'];
 mainP[5].textContent = siteContent['contact']['address'];
@@ -86,6 +90,9 @@ mainP[6].textContent = siteContent['contact']['phone'];
 mainP[7].textContent = siteContent['contact']['email']; 
 
 mainP[8].textContent = siteContent['footer']['copyright'];
+
+
+// Code to place footer content
 
 
 let ctaImage = document.getElementById("cta-img");
@@ -98,12 +105,16 @@ var parent = document.querySelector('nav');
 
 var aTagPrepend = document.createElement('a');
 
-aTagPrepend.textContent = 'PrependTest'
+aTagPrepend.textContent = 'PrependTest';
 
 parent.prepend(aTagPrepend);
 
 var aTag = document.createElement('a');
 
-aTag.textContent = 'AppendTest'
+aTag.textContent = 'AppendTest';
 
 parent.appendChild(aTag);
+
+// Stretech Goals 
+
+document.body.style.backgroundColor = 'purple';
