@@ -118,12 +118,19 @@ aTag.textContent = 'AppendTest';
 
 parent.appendChild(aTag);
 
-// Stretech Goals 
+// Stretch Goals 
 
 document.body.style.backgroundColor = 'purple';
 
-var siteRefactorBtn = document.creatElement("button");
-siteRefactorBtn.innerHTML = "Refactor Button";
-document.body.appendChild(btn);
+let siteRefactorBtn = document.createElement("button");
+siteRefactorBtn.textContent = "Refactor Button";
+footerElement = document.querySelector("footer");
+footerElement.appendChild(siteRefactorBtn);
 
-//siteRefactorBtn.addEventListener
+siteRefactorBtn.addEventListener("click", () => {
+
+    newBtn = document.createElement("button");
+    newBtn.textContent = "Button Added!"
+    footerElement.appendChild(newBtn);
+
+});
