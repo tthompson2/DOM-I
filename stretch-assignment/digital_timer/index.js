@@ -8,7 +8,6 @@ var buttonListener = document.addEventListener('click', () => {
     setInterval(function(){
         ++value;
         let miliSecondsGrabbed =document.getElementById("msTens");
-        //let updatedSeconds = document.createElement("p");
         miliSecondsGrabbed.textContent = value;
         if(miliSecondsGrabbed.textContent > 9) {
             ++secondValue; 
@@ -30,8 +29,29 @@ var buttonListener = document.addEventListener('click', () => {
                 }
             }
         }
-        //secondsGrabbed.appendChild(updatedSeconds);
     }, 10);
 
 });
+
+var resetCreator = document.createElement("button");
+resetCreator.textContent = "Reset";
+var selectedButton = document.getElementsByClassName("button");
+selectedButton[0].appendChild(resetCreator);
+
+resetCreator = document.addEventListener("click", () => {
+
+    let zero = 0;
+
+    let firstGrabbed = document.getElementById("msTens");
+    let secondGrabbed = document.getElementById("msHundreds");
+    let thirdGrabbed = document.getElementById("secondOnes");
+    let fourthGrabbed = document.getElementById("secondTens");
+
+    firstGrabbed.textContent = zero;
+    secondGrabbed.textContent = zero;
+    thirdGrabbed.textContent = zero;
+    fourthGrabbed.textContent = zero;
+
+});
+
 
